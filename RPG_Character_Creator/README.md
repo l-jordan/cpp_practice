@@ -1,3 +1,6 @@
+
+<h2>PROBLEM INSTRUCTIONS</h2>
+
 I asked ChatGPT to give me a practice problem where I can practice constructing a class using header and complier files. 
 
 It gave me a starter header, complier and main file in which I could add to get a grasp on these concepts. 
