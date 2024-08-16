@@ -3,17 +3,19 @@
 
 int main() {
     //COMMENT + CODE ADDED
-    //Structure: Character(std::string n, int h, int s, int d, std::string m, int sp)
+    //Structure: Character(std::string n, int h, int s, int d, std::string m)
 
-    Character hero("Hero", 100, 20, 5, 'Levitate', 10);
-    Character villain("Villain", 80, 15, 7, 'Invisibility', 15);
+    Tainted Bloodsworn("Orka", 15, 2, 1, true);
+    Tainted Ravens("Ilska", 9, 2, 1, true);
+    Character BattleGrim("Elvar", 100, 15, 6, false);
 
-    std::cout << hero.getName() << " attacks " << villain.getName() << "!" << std::endl;
-    hero.attack(villain);
+    std::cout << "Ilska has " << Ravens.getHealth() << " XP \n";
+    std::cout << Bloodsworn.getName() << " attacks " << Ravens.getName() << "!" << std::endl;
 
-    std::cout << villain.getName() << " has " << villain.getHealth() << " health left." << std::endl;
+    Bloodsworn.attack(Ravens);
 
-    std::cout << compareHealth(hero, villain) << std::endl;
+    std::string compareHealth(const Tainted &Bloodsworn, const Tainted &Ravens);
 
+    std::cout << "Ilska now has " << Ravens.getHealth() << " XP \n";
     return 0;
 }
